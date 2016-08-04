@@ -6,7 +6,7 @@
         let recordToDelete:string = $(this).attr("data-id");
         if (recordToDelete != '') {
             // Perform the ajax post
-            $.post("/ShoppingCart/RemoveFromCart" + recordToDelete,
+            $.post("/ShoppingCart/RemoveFromCart/" + recordToDelete,
                 function (data) {
                     // Successful requests get here
                     // Update the page elements
